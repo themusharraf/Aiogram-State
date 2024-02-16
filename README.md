@@ -1,7 +1,9 @@
 # Aiogram 3 State
 
 # .env environment
-      TOKEN = Bot Token
+```python
+TOKEN = Bot Token
+```
 
 ```python
 pip install aiogram
