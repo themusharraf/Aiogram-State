@@ -3,7 +3,7 @@
 # .env environment
 ```python
 TOKEN = Bot Token
-Channel=- channel id
+Channel = channel id
 ```
 
 ```python
