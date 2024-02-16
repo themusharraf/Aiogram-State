@@ -55,7 +55,7 @@ async def process_username(message: Message, state: FSMContext) -> None:
 
 
 @router.message(Form.phone)
-async def process_username(message: Message, state: FSMContext) -> None:
+async def process_username(message: Message, state: FSMContext, bot: Bot) -> None:
     await state.update_data(phone=message.text)
     await state.set_state(Form.finish)
     data = await state.get_data()
@@ -68,6 +68,7 @@ async def process_username(message: Message, state: FSMContext) -> None:
     username = data.get("username", "Unknown")
     phone = data.get("phone", "Unknown")
     matn = f"Name: {name}\nPhone: {phone}\nUsername: {username}"
+    await bot.send_message(chat_id=Channel, text=matn)
     await message.answer(matn)
 
 
