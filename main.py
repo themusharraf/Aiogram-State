@@ -1,8 +1,6 @@
 import os
 import logging
 import asyncio
-import time
-from typing import Any, Dict
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import StatesGroup, State
 from dotenv import load_dotenv
@@ -68,8 +66,8 @@ async def process_username(message: Message, state: FSMContext, bot: Bot) -> Non
     username = data.get("username", "Unknown")
     phone = data.get("phone", "Unknown")
     matn = f"Name: {name}\nPhone: {phone}\nUsername: {username}"
-    await bot.send_message(chat_id=Channel, text=matn)
     await message.answer(matn)
+    await bot.send_message(chat_id=Channel, text=matn)
 
 
 async def main():
