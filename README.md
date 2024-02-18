@@ -1,8 +1,9 @@
-# Aiogram 3 State
-
+# Aiogram 3 State send channel 
+❗️ Bot admin in channel ✅
 # .env environment
 ```python
 TOKEN = Bot Token
+Channel = channel id
 ```
 
 ```python
