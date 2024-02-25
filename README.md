@@ -1,4 +1,4 @@
-# Aiogram 3 State send channel  
+# Aiogram 3 State send channel   
 ❗️ Bot admin in channel ✅  
 # .env environment 
 ```python    
