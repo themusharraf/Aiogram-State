@@ -2,7 +2,7 @@
 ❗️ Bot admin in channel ✅ 
 # .env environment 
 ```python 
-TOKEN = Bot Token 
+TOKEN = Bot Token  
 Channel = channel id
 ```
  
